@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2329401839.js" crossorigin="anonymous"></script>
+    <title>homemall signup</title>
+    <script defer src="script.js"  ></script>
+    <link rel="stylesheet"href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>SIGNUP</h2>
+            <form action="/" id="form" method="get">
+                <div class="inputbox ">
+                    <input type="text"  name= "firstname" id="firstname" required>
+                    <label>firstname</label>
+                    <span class="error-icon "><i class="fa-solid fa-circle-exclamation" style="color: #fd1c1c;"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check" style="color: #136f01;"></i></span>
+                </div>
+                <div class="inputbox ">
+                    <input type="text"  name= "lastname" id="lastname" required >
+                    <label>lastname</label>
+                    <span class="error-icon "><i class="fa-solid fa-circle-exclamation" style="color: #fd1c1c;"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check" style="color: #136f01;"></i></span>
+
+                </div>
+            
+                <div class="inputbox">
+                    <input type="email" name="email" id="email" required>
+                    <label>email</label>
+                    <span class="error-icon "><i class="fa-solid fa-circle-exclamation" style="color: #fd1c1c;"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check" style="color: #136f01;"></i></span>
+
+                </div><br>
+                <div class="inputbox">
+                    <!-- <input type="text" name= "course" required> -->
+                
+                    <select name="course"  id="course">
+                        <optgroup label="choose course">
+                    
+                          <option value="Data Science">Data Science</option>
+                          <option value="Cyber Security">Cyber Security</option>
+                          <option value="Database Management">Database Management</option>
+                          <option value="DEVops">DEVops</option>
+                        </optgroup>
+                    </select><label>course</label>
+                </div>
+                <p id="errorMessage" hidden></p>
+                <button class="signupB" type="submit" name="submit">Create Account</button>
+                
+                <div class="login_link"><a href="#">Already have an Account</a></div>
+            </form>
+        </div>
+    
+    </div>
+
+</body>
+</html>
